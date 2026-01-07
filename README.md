@@ -38,11 +38,17 @@ This application acts as a central decision-support system that:
  
  |-- data/
  | |-- providers.json # Database of Doctors & Locations
+ 
  | |-- plans.json # Database of Insurance Plans
+ 
  |-- static/
+ 
  | |-- css/style.css # Styling
+ 
  | |-- js/script.js # Frontend Logic & Map Control
+ 
  |-- templates/
+ 
  |-- index.html # Main User Interface
 
 
