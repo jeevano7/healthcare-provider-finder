@@ -33,7 +33,7 @@ This application acts as a central decision-support system that:
 ##  Project Structure
 
   healthcare-provider-finder/
- |
+  
  |-- app.py # Main Flask Application
  |-- data/
  | |-- providers.json # Database of Doctors & Locations
