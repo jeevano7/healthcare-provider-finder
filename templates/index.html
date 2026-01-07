@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Provider Finder</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='js/css/style.css') }}">
+</head>
+<body>
+
+    <!-- The main container now holds the sidebar and map side-by-side -->
+    <div class="app-container">
+
+        <!-- UNIFIED SIDEBAR for search and results -->
+        <div class="sidebar-container">
+            <!-- Search Controls are now inside the sidebar -->
+            <div class="search-controls">
+                <h1>Find a Provider</h1>
+                
+                <!-- NEW: City Dropdown -->
+                <label for="city-select">Location (City):</label>
+                <select id="city-select">
+                    <option value="">All Cities</option>
+                    {% for city in cities %}
+                        <option value="{{ city }}">{{ city }}</option>
+                    {% endfor %}
+                </select>
+
+                <label for="specialty-select">Specialty:</label>
+                <select id="specialty-select">
+                    <option value="">All Specialties</option>
+                    {% for specialty in specialties %}
+                        <option value="{{ specialty }}">{{ specialty }}</option>
+                    {% endfor %}
+                </select>
+
+                <label for="plan-select">Insurance Plan:</label>
+                <select id="plan-select">
+                    <option value="">Select Your Plan</option>
+                    {% for plan in plans %}
+                        <option value="{{ plan.id }}">{{ plan.name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            
+            <!-- The list of results will go here, below the controls -->
+            <div id="results-list">
+                <p>Use the filters to find a provider.</p>
+            </div>
+        </div>
+
+        <!-- The Map will take the rest of the space -->
+        <div id="map"></div>
+        
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

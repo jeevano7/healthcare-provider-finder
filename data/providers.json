@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Priya Sharma",
+    "specialty": "Cardiology",
+    "address": "15 Apollo Hospital, Colaba, Mumbai",
+    "lat": 18.9220,
+    "lng": 72.8347,
+    "accepted_plan_ids": [101, 103]
+  },
+  {
+    "id": 2,
+    "name": "Dr. Rohan Mehta",
+    "specialty": "Dermatology",
+    "address": "45 Skin Care Rd, Connaught Place, New Delhi",
+    "lat": 28.6330,
+    "lng": 77.2194,
+    "accepted_plan_ids": [101, 102]
+  },
+  {
+    "id": 3,
+    "name": "Dr. Ananya Reddy",
+    "specialty": "Pediatrics",
+    "address": "789 Child Health Ave, Koramangala, Bengaluru",
+    "lat": 12.9352,
+    "lng": 77.6245,
+    "accepted_plan_ids": []
+  },
+  {
+    "id": 4,
+    "name": "Dr. Vikram Singh",
+    "specialty": "Cardiology",
+    "address": "32 Max Hospital Rd, Saket, New Delhi",
+    "lat": 28.5285,
+    "lng": 77.2180,
+    "accepted_plan_ids": [102, 104]
+  },
+  {
+    "id": 5,
+    "name": "Dr. Sneha Patil",
+    "specialty": "Dermatology",
+    "address": "65 Kaya Clinic Ln, Bandra West, Mumbai",
+    "lat": 19.0544,
+    "lng": 72.8402,
+    "accepted_plan_ids": [101, 102, 103]
+  },
+  {
+    "id": 6,
+    "name": "Dr. Arjun Desai",
+    "specialty": "Pediatrics",
+    "address": "101 Rainbow Hospital St, Anna Nagar, Chennai",
+    "lat": 13.0845,
+    "lng": 80.2101,
+    "accepted_plan_ids": [101, 103, 104]
+  },
+  {
+    "id": 7,
+    "name": "Dr. Aisha Khan",
+    "specialty": "Cardiology",
+    "address": "22 Fortis Way, Bannerghatta Road, Bengaluru",
+    "lat": 12.8943,
+    "lng": 77.6074,
+    "accepted_plan_ids": []
+  },
+  {
+    "id": 8,
+    "name": "Dr. Sameer Gupta",
+    "specialty": "Orthopedics",
+    "address": "55 Medanta Medicity, Sector 38, Gurugram",
+    "lat": 28.4595,
+    "lng": 77.0266,
+    "accepted_plan_ids": [101, 104]
+  }
+]

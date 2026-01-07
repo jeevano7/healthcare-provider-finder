@@ -1,0 +1,117 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f7f6;
+    color: #333;
+    /* Prevent scrolling on the body */
+    overflow: hidden; 
+}
+
+/* NEW: Main layout is now a horizontal flexbox */
+.app-container {
+    display: flex;
+    flex-direction: row; /* Side-by-side layout */
+    height: 100vh;
+}
+
+/* NEW: The sidebar for controls and list */
+.sidebar-container {
+    width: 380px; /* Fixed width for the sidebar */
+    flex-shrink: 0; /* Prevents the sidebar from shrinking */
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+/* Updated search controls styling */
+.search-controls {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.search-controls h1 {
+    margin: 0 0 15px 0;
+    font-size: 24px;
+    color: #005a9c;
+}
+
+.search-controls label {
+    display: block; /* Make labels take their own line */
+    margin: 15px 0 5px 0; /* Add space between filters */
+    font-weight: bold;
+}
+
+.search-controls select {
+    width: 100%; /* Make dropdowns fill the width */
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* NEW: The map now grows to fill remaining space */
+#map {
+    flex-grow: 1; /* This makes the map take all available horizontal space */
+    height: 100%;
+}
+
+/* The results list now fills the remaining space in the sidebar */
+#results-list {
+    flex-grow: 1; /* Takes up remaining vertical space */
+    overflow-y: auto; /* Allows scrolling only on the list */
+    padding: 10px;
+}
+
+/* Card styling remains the same */
+.provider-card {
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.provider-card h3 {
+    margin: 0 0 5px 0;
+    color: #005a9c;
+}
+
+.provider-card p {
+    margin: 0;
+    color: #555;
+}
+
+.in-network-badge {
+    display: inline-block;
+    background-color: #28a745;
+    color: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* ... keep all existing CSS ... */
+
+/* NEW: Badge for out-of-network providers */
+.out-of-network-badge {
+    display: inline-block;
+    background-color: #dc3545; /* Red for warning */
+    color: white;
+    padding: 3px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.out-of-network-warning {
+    font-size: 12px;
+    color: #dc3545;
+    font-weight: bold;
+    margin-top: 8px;
+}
