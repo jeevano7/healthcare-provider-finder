@@ -35,6 +35,7 @@ This application acts as a central decision-support system that:
   healthcare-provider-finder/
   
  |-- app.py # Main Flask Application
+ 
  |-- data/
  | |-- providers.json # Database of Doctors & Locations
  | |-- plans.json # Database of Insurance Plans
