@@ -32,17 +32,17 @@ This application acts as a central decision-support system that:
 
 ##  Project Structure
 
-healthcare-provider-finder/
-│
-├── app.py # Main Flask Application (The "Brain")
-├── data/
-│ ├── providers.json # Database of Doctors & Locations
-│ └── plans.json # Database of Insurance Plans
-├── static/
-│ ├── css/style.css # Styling
-│ └── js/script.js # Frontend Logic & Map Control
-└── templates/
-└── index.html # Main User Interface
+   healthcare-provider-finder/
+ │
+ ├── app.py # Main Flask Application
+ ├── data/
+ │ ├── providers.json # Database of Doctors & Locations
+ │ └── plans.json # Database of Insurance Plans
+ ├── static/
+ │ ├── css/style.css # Styling
+ │ └── js/script.js # Frontend Logic & Map Control
+ └── templates/
+ └── index.html # Main User Interface
 
 
 ## How to Run Locally
@@ -51,8 +51,8 @@ healthcare-provider-finder/
 
    $ bash
 
-   git clone https://github.com/yourusername/healthcare-finder.git
-   
+   git clone https://github.com/jeevano7/healthcare-provider-finder.git
+
    cd healthcare-finder
 
    pip install flask
